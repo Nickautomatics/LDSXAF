@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Logo="ExpressAppLogo">
+  <NavigationItems NavigationStyle="NavBar" ShowImages="True" DefaultChildItemsDisplayStyle="LargeIcons" RootGroupsStyle="Standard">
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="AssistantTeacher_ListView" ImageName="BO_Department" />
+          <Item Id="Batch_ListView" ImageName="Reviewers" />
+          <Item Id="Network_ListView" ImageName="EmployeeQuickWelcome" />
+          <Item Id="Student_ListView" ImageName="BO_Employee" />
+          <Item Id="Student_ListView_Attendance" Caption="Attendance" ViewId="Student_ListView_Attendance" ImageName="ItemTypeChecked" IsNewNode="True" />
+          <Item Id="Student_ListView_Generate" Caption="Generate Qr Id" ViewId="Student_ListView_Generate" ImageName="Barcode" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options UIType="SingleWindowSDI" FormStyle="Ribbon" ShowTabImage="False">
+    <LayoutManagerOptions EnableLayoutGroupImages="False" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="18.2.6.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="18.2.6.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="Batch_ListView" ImageName="Reviewers" AutoExpandAllGroups="False" />
+    <DetailView Id="Student_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100" Direction="Horizontal" TextAlignMode="AlignWithChildren">
+            <LayoutGroup Id="Auto70cd9c9d-3eeb-4954-8084-ed59cd8414da" ShowCaption="False" Caption="" Index="0" RelativeSize="74.451273046532052" IsNewNode="True">
+              <LayoutGroup Id="Autoc13af13e-a58d-4179-b72c-b9e390f83083" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="35.802469135802468" IsNewNode="True">
+                <LayoutGroup Id="Student" ShowCaption="True" Direction="Horizontal" Index="0" RelativeSize="45.990566037735846" IsNewNode="True">
+                  <LayoutGroup Id="Student_col1" ShowCaption="False" Index="0" RelativeSize="99.191374663072779" IsNewNode="True">
+                    <LayoutItem Id="FirstName" ViewItem="FirstName" Index="0" RelativeSize="12.5" IsNewNode="True" />
+                    <LayoutItem Id="LastName" ViewItem="LastName" Index="1" RelativeSize="9.375" IsNewNode="True" />
+                    <LayoutItem Id="Network" ViewItem="Network" Index="2" RelativeSize="9.375" IsNewNode="True" />
+                    <LayoutItem Id="Program" ViewItem="Program" Index="3" RelativeSize="9.375" IsNewNode="True" />
+                    <LayoutItem Id="Birthday" ViewItem="Birthday" Index="4" RelativeSize="9.375" IsNewNode="True" />
+                    <LayoutItem Id="Nickname" ViewItem="Nickname" Index="5" RelativeSize="9.375" IsNewNode="True" />
+                    <LayoutItem Id="CellLeader" ViewItem="CellLeader" Index="6" RelativeSize="9.375" IsNewNode="True" />
+                    <LayoutItem Id="ContactOfCellLeader" ViewItem="ContactOfCellLeader" Index="7" RelativeSize="9.375" IsNewNode="True" />
+                    <LayoutItem Id="AssistantTeacher" ViewItem="AssistantTeacher" Index="8" RelativeSize="9.375" IsNewNode="True" />
+                    <LayoutItem Id="Batch" ViewItem="Batch" Index="9" RelativeSize="12.5" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Student_col2" ShowCaption="False" Direction="Horizontal" Index="1" RelativeSize="0.80862533692722371" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="Item1" Index="1" RelativeSize="1.179245283018868" IsNewNode="True" />
+                <LayoutItem Id="Picture" ShowCaption="False" ViewItem="Picture" CaptionLocation="Left" SizeConstraintsType="Custom" MinSize="30, 30" Index="2" RelativeSize="52.830188679245282" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Auto58a92d2d-8351-4a28-a4d9-87379553e2fb" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="64.197530864197532" IsNewNode="True">
+                <LayoutItem Id="Item5" Index="0" RelativeSize="47.169811320754718" IsNewNode="True" />
+                <LayoutItem Id="FullName" ShowCaption="False" TextAlignMode="CustomSize" ViewItem="FullName" SizeConstraintsType="Custom" MinSize="60, 30" Index="1" RelativeSize="52.830188679245282" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Autoa6f516e7-8778-4c15-98ba-fa494082709b" ShowCaption="False" Caption="Autoa6f516e7-8778-4c15-98ba-fa494082709b(4)" Index="1" RelativeSize="25.548726953467956" TextAlignMode="UseParentOptions" IsNewNode="True">
+              <LayoutGroup Id="Autoda1b445c-67ce-4394-b539-89b7912dc7b2" ShowCaption="False" Caption="Autoda1b445c-67ce-4394-b539-89b7912dc7b2(5)" Direction="Vertical" Index="0" RelativeSize="41.111111111111114" TextAlignMode="AlignWithChildren" IsNewNode="True">
+                <LayoutItem Id="Item3" Index="0" RelativeSize="13.513513513513514" IsNewNode="True" />
+                <LayoutGroup Id="Autod2faa4f9-076a-414a-94f9-0aeb9b96c458" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="86.486486486486484" IsNewNode="True">
+                  <LayoutGroup Id="Autocf880160-98cb-42a8-8fec-8b0d95edfcb1" ShowCaption="False" Caption="Autocf880160-98cb-42a8-8fec-8b0d95edfcb1(6)" Direction="Horizontal" Index="0" RelativeSize="3.4364261168384878" IsNewNode="True" />
+                  <LayoutItem Id="Item2" Index="1" RelativeSize="96.56357388316151" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutItem Id="Item4" Index="1" RelativeSize="58.888888888888886" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Student" RelativeSize="23.950617283950617" Index="1" Removed="True">
+              <LayoutGroup Id="Student_col1" RelativeSize="49.955156950672645">
+                <LayoutItem Id="Network" Index="3" RelativeSize="15" />
+                <LayoutItem Id="Program" Index="4" RelativeSize="35" />
+                <LayoutItem Id="FirstName" RelativeSize="20" />
+                <LayoutItem Id="FullName" RelativeSize="15" />
+                <LayoutItem Id="LastName" RelativeSize="15" />
+                <LayoutItem Id="Picture" RelativeSize="82.291666666666671" Removed="True" />
+                <LayoutItem Id="QRImage" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Student_col2" RelativeSize="50.044843049327355">
+                <LayoutItem Id="AssistantTeacher" RelativeSize="20" />
+                <LayoutItem Id="Batch" RelativeSize="15" />
+                <LayoutItem Id="Birthday" RelativeSize="20" />
+                <LayoutItem Id="CellLeader" RelativeSize="15" />
+                <LayoutItem Id="ContactOfCellLeader" RelativeSize="15" />
+                <LayoutItem Id="Nickname" RelativeSize="15" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Student_DetailView_Generate" ClassName="LDS.Module.BusinessObjects.Student" Caption="GenerateQr" IsNewNode="True">
+      <Items IsNewNode="True">
+        <PropertyEditor Id="Batch" PropertyName="Batch" IsNewNode="True" />
+        <PropertyEditor Id="Birthday" PropertyName="Birthday" IsNewNode="True" />
+        <PropertyEditor Id="CellLeader" PropertyName="CellLeader" IsNewNode="True" />
+        <PropertyEditor Id="ContactOfCellLeader" PropertyName="ContactOfCellLeader" IsNewNode="True" />
+        <PropertyEditor Id="FirstName" PropertyName="FirstName" IsNewNode="True" />
+        <PropertyEditor Id="FullName" PropertyName="FullName" IsNewNode="True" />
+        <ActionContainerViewItem Id="GenerateQRID" ActionContainer="GenerateQr" Caption="Generate" IsNewNode="True" />
+        <PropertyEditor Id="LastName" PropertyName="LastName" IsNewNode="True" />
+        <PropertyEditor Id="Network" PropertyName="Network" IsNewNode="True" />
+        <PropertyEditor Id="Nickname" PropertyName="Nickname" IsNewNode="True" />
+        <PropertyEditor Id="Picture" PropertyName="Picture" IsNewNode="True" />
+        <PropertyEditor Id="Program" PropertyName="Program" IsNewNode="True" />
+        <PropertyEditor Id="QRImage" PropertyName="QRImage" IsNewNode="True" />
+        <PropertyEditor Id="Week1" PropertyName="Week1" IsNewNode="True" />
+        <PropertyEditor Id="Week10" PropertyName="Week10" IsNewNode="True" />
+        <PropertyEditor Id="Week2" PropertyName="Week2" IsNewNode="True" />
+        <PropertyEditor Id="Week3" PropertyName="Week3" IsNewNode="True" />
+        <PropertyEditor Id="Week4" PropertyName="Week4" IsNewNode="True" />
+        <PropertyEditor Id="Week5" PropertyName="Week5" IsNewNode="True" />
+        <PropertyEditor Id="Week6" PropertyName="Week6" IsNewNode="True" />
+        <PropertyEditor Id="Week7" PropertyName="Week7" IsNewNode="True" />
+        <PropertyEditor Id="Week8" PropertyName="Week8" IsNewNode="True" />
+        <PropertyEditor Id="Week9" PropertyName="Week9" IsNewNode="True" />
+      </Items>
+      <Layout IsNewNode="True">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False" RelativeSize="100" IsNewNode="True">
+          <LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="False" RelativeSize="100" IsNewNode="True">
+            <LayoutGroup Id="Student" Index="0" Direction="Horizontal" ShowCaption="True" RelativeSize="100" Caption="Student" IsNewNode="True">
+              <LayoutItem Id="Item1" Index="0" RelativeSize="0.90334236675700086" IsNewNode="True" />
+              <LayoutGroup Id="Autoa21c0362-615b-4732-b13a-f02d921f3408" ShowCaption="False" Caption="Autoa21c0362-615b-4732-b13a-f02d921f3408(5)" Index="1" RelativeSize="45.528455284552848" IsNewNode="True">
+                <LayoutItem Id="QRImage" ViewItem="QRImage" Index="0" RelativeSize="56.119791666666664" IsNewNode="True" />
+                <LayoutGroup Id="Autoa5ec23bb-53f5-422b-a533-72569d69611a" ShowCaption="False" Caption="Autoa5ec23bb-53f5-422b-a533-72569d69611a(7)" Direction="Horizontal" Index="1" RelativeSize="5.208333333333333" IsNewNode="True">
+                  <LayoutItem Id="FullName" ViewItem="FullName" SizeConstraintsType="Custom" MinSize="115, 32" Index="0" RelativeSize="63.492063492063494" IsNewNode="True" />
+                  <LayoutItem Id="GenerateQRID" ViewItem="GenerateQRID" Index="1" RelativeSize="34.325396825396822" SizeConstraintsType="Custom" MinSize="153, 40" TextAlignMode="CustomSize" IsNewNode="True" />
+                  <LayoutItem Id="Item4" Index="2" RelativeSize="2.1825396825396823" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="Item3" Index="2" RelativeSize="38.671875" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Item2" Index="2" RelativeSize="53.568202348690157" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Student_ListView">
+      <Columns>
+        <ColumnInfo Id="Week1" Index="-1" />
+        <ColumnInfo Id="Week10" Index="-1" />
+        <ColumnInfo Id="Week2" Index="-1" />
+        <ColumnInfo Id="Week3" Index="-1" />
+        <ColumnInfo Id="Week4" Index="-1" />
+        <ColumnInfo Id="Week5" Index="-1" />
+        <ColumnInfo Id="Week6" Index="-1" />
+        <ColumnInfo Id="Week7" Index="-1" />
+        <ColumnInfo Id="Week8" Index="-1" />
+        <ColumnInfo Id="Week9" Index="-1" />
+        <ColumnInfo Id="QRImage" ImageEditorFixedHeight="0" Width="70" ImageEditorCustomHeight="80" />
+        <ColumnInfo Id="Batch" Index="11" />
+      </Columns>
+    </ListView>
+    <ListView Id="Student_ListView_Attendance" ClassName="LDS.Module.BusinessObjects.Student" Caption="Attendance" IsNewNode="True">
+      <Columns IsNewNode="True">
+        <ColumnInfo Id="Batch" PropertyName="Batch" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Birthday" PropertyName="Birthday" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="CellLeader" PropertyName="CellLeader" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="ContactOfCellLeader" PropertyName="ContactOfCellLeader" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="FirstName" PropertyName="FirstName" Width="400" SortIndex="0" SortOrder="Ascending" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="LastName" PropertyName="LastName" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Network" PropertyName="Network" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Nickname" PropertyName="Nickname" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Picture" PropertyName="Picture" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Program" PropertyName="Program" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="QRImage" PropertyName="QRImage" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="FullName" PropertyName="FullName" Width="70" Index="0" IsNewNode="True" />
+        <ColumnInfo Id="Week1" PropertyName="Week1" Width="70" Index="1" IsNewNode="True" />
+        <ColumnInfo Id="Week2" PropertyName="Week2" Width="70" Index="2" IsNewNode="True" />
+        <ColumnInfo Id="Week3" PropertyName="Week3" Width="70" Index="3" IsNewNode="True" />
+        <ColumnInfo Id="Week4" PropertyName="Week4" Width="70" Index="4" IsNewNode="True" />
+        <ColumnInfo Id="Week5" PropertyName="Week5" Width="70" Index="5" IsNewNode="True" />
+        <ColumnInfo Id="Week6" PropertyName="Week6" Width="70" Index="6" IsNewNode="True" />
+        <ColumnInfo Id="Week7" PropertyName="Week7" Width="70" Index="7" IsNewNode="True" />
+        <ColumnInfo Id="Week8" PropertyName="Week8" Width="70" Index="8" IsNewNode="True" />
+        <ColumnInfo Id="Week9" PropertyName="Week9" Width="70" Index="9" IsNewNode="True" />
+        <ColumnInfo Id="Week10" PropertyName="Week10" Width="70" Index="10" IsNewNode="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="Student_ListView_Generate" ClassName="LDS.Module.BusinessObjects.Student" Caption="GenerateQR" MasterDetailView="" DetailViewID="Student_DetailView_Generate" IsNewNode="True">
+      <Columns IsNewNode="True">
+        <ColumnInfo Id="Batch" PropertyName="Batch" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Birthday" PropertyName="Birthday" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="CellLeader" PropertyName="CellLeader" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="ContactOfCellLeader" PropertyName="ContactOfCellLeader" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="FirstName" PropertyName="FirstName" Width="400" SortIndex="0" SortOrder="Ascending" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="LastName" PropertyName="LastName" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Network" PropertyName="Network" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Nickname" PropertyName="Nickname" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Picture" PropertyName="Picture" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Program" PropertyName="Program" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Week1" PropertyName="Week1" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Week10" PropertyName="Week10" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Week2" PropertyName="Week2" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Week3" PropertyName="Week3" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Week4" PropertyName="Week4" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Week5" PropertyName="Week5" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Week6" PropertyName="Week6" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Week7" PropertyName="Week7" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Week8" PropertyName="Week8" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Week9" PropertyName="Week9" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="FullName" PropertyName="FullName" Width="70" Index="0" IsNewNode="True" />
+        <ColumnInfo Id="QRImage" PropertyName="QRImage" Width="70" Index="1" ImageEditorCustomHeight="80" IsNewNode="True" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>
