@@ -99,9 +99,15 @@
     <Compile Include="BusinessObjects\AssistantTeacher.cs" />
     <Compile Include="BusinessObjects\Batch.cs" />
     <Compile Include="BusinessObjects\Network.cs" />
+    <Compile Include="BusinessObjects\ProgramWeek.cs" />
     <Compile Include="BusinessObjects\Student.cs" />
+    <Compile Include="Controllers\AssistantTeacherViewController.cs" />
+    <Compile Include="Controllers\AssistantTeacherViewController.Designer.cs">
+      <DependentUpon>AssistantTeacherViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\BatchViewController.cs" />
     <Compile Include="Controllers\FilterViewController.cs" />
+    <Compile Include="Controllers\ProgramWeekViewController.cs" />
     <Compile Include="Controllers\StudentListViewController.cs">
       <SubType>Component</SubType>
     </Compile>

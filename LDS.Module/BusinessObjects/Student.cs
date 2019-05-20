@@ -271,6 +271,7 @@ namespace LDS.Module.BusinessObjects
 
         
         [Association("AssistantTeacher-Students")]
+        [DataSourceCriteria("Program = '@This.Program'")]
         public AssistantTeacher AssistantTeacher
         {
             get => assistantTeacher;

@@ -12,16 +12,14 @@ using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
 using LDS.Module.PublicEnums;
-using DevExpress.ExpressApp.ConditionalAppearance;
 
 namespace LDS.Module.BusinessObjects
 {
     [DefaultClassOptions]
-    [XafDefaultProperty(nameof(BatchNo))]
 
-    public class Batch : XPObject
+    public class ProgramWeek : XPObject
     { 
-        public Batch(Session session)
+        public ProgramWeek(Session session)
             : base(session)
         {
         }
@@ -31,21 +29,19 @@ namespace LDS.Module.BusinessObjects
         }
 
         Program program;
-        bool isActiveBatch;
-        int batchNo;
+        bool activeWeek;
+        PublicEnums.Week weeks;
 
-        [DefaultValue(false)]
-        public bool IsActiveBatch
+        public PublicEnums.Week Weeks
         {
-            get => isActiveBatch;
-            set => SetPropertyValue(nameof(IsActiveBatch), ref isActiveBatch, value);
+            get => weeks;
+            set => SetPropertyValue(nameof(Weeks), ref weeks, value);
         }
 
-        [RuleRequiredField]
-        public int BatchNo
+        public bool ActiveWeek
         {
-            get => batchNo;
-            set => SetPropertyValue(nameof(BatchNo), ref batchNo, value);
+            get => activeWeek;
+            set => SetPropertyValue(nameof(ActiveWeek), ref activeWeek, value);
         }
 
         public Program Program
@@ -54,14 +50,6 @@ namespace LDS.Module.BusinessObjects
             set => SetPropertyValue(nameof(Program), ref program, value);
         }
 
-        [Association("Batch-Students")]
-        public XPCollection<Student> Students
-        {
-            get
-            {
-                return GetCollection<Student>(nameof(Students));
-            }
-        }
 
     }
 }

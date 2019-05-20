@@ -7,6 +7,7 @@
           <Item Id="AssistantTeacher_ListView" ImageName="BO_Department" />
           <Item Id="Batch_ListView" ImageName="Reviewers" />
           <Item Id="Network_ListView" ImageName="EmployeeQuickWelcome" />
+          <Item Id="ProgramWeek_ListView" ImageName="NextWeek" />
           <Item Id="Student_ListView" ImageName="BO_Employee" />
           <Item Id="Student_ListView_Attendance" Caption="Attendance" ViewId="Student_ListView_Attendance" ImageName="ItemTypeChecked" IsNewNode="True" />
           <Item Id="Student_ListView_Generate" Caption="Generate Qr Id" ViewId="Student_ListView_Generate" ImageName="Barcode" IsNewNode="True" />

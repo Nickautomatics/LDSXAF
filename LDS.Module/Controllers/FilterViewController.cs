@@ -39,6 +39,9 @@ namespace LDS.Module.Controllers
                     case "Student_ListView":
                     case "Student_ListView_Attendance":
                     case "Batch_ListView":
+                    case "ProgramWeek_ListView":
+                    case "AssistantTeacher_ListView":
+                    case "Student_ListView_Generate":
                         if (CurrentUserRole != "Administrators")
                             listview.CollectionSource.Criteria["FilterStudent"] = CriteriaOperator.Parse($"[Program] = '{(Program)Enum.Parse(typeof(Program), CurrentUserRole)}'");
                         break;

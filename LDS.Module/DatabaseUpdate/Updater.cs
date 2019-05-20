@@ -144,11 +144,13 @@ namespace LDS.Module.DatabaseUpdate {
                 lifeClassRole.AddTypePermission<Student>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
                 lifeClassRole.AddTypePermission<Batch>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
                 lifeClassRole.AddTypePermission<AssistantTeacher>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
+                lifeClassRole.AddTypePermission<ProgramWeek>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
                 lifeClassRole.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/Batch_ListView", SecurityPermissionState.Allow);
                 lifeClassRole.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/Student_ListView", SecurityPermissionState.Allow);
                 lifeClassRole.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/Student_ListView_Attendance", SecurityPermissionState.Allow);
                 lifeClassRole.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/Student_ListView_Generate", SecurityPermissionState.Allow);
                 lifeClassRole.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/AssistantTeacher_ListView", SecurityPermissionState.Allow);
+                lifeClassRole.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/ProgramWeek_ListView", SecurityPermissionState.Allow);
             }
             return lifeClassRole;
         }
@@ -172,11 +174,13 @@ namespace LDS.Module.DatabaseUpdate {
                 sol1Role.AddTypePermission<Student>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
                 sol1Role.AddTypePermission<Batch>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
                 sol1Role.AddTypePermission<AssistantTeacher>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
+                sol1Role.AddTypePermission<ProgramWeek>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
                 sol1Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/Batch_ListView", SecurityPermissionState.Allow);
                 sol1Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/Student_ListView", SecurityPermissionState.Allow);
                 sol1Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/Student_ListView_Attendance", SecurityPermissionState.Allow);
                 sol1Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/Student_ListView_Generate", SecurityPermissionState.Allow);
                 sol1Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/AssistantTeacher_ListView", SecurityPermissionState.Allow);
+                sol1Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/ProgramWeek_ListView", SecurityPermissionState.Allow);
             }
             return sol1Role;
         }
@@ -201,11 +205,13 @@ namespace LDS.Module.DatabaseUpdate {
                 sol2Role.AddTypePermission<Student>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
                 sol2Role.AddTypePermission<Batch>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
                 sol2Role.AddTypePermission<AssistantTeacher>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
+                sol2Role.AddTypePermission<ProgramWeek>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
                 sol2Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/Batch_ListView", SecurityPermissionState.Allow);
                 sol2Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/Student_ListView", SecurityPermissionState.Allow);
                 sol2Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/Student_ListView_Attendance", SecurityPermissionState.Allow);
                 sol2Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/Student_ListView_Generate", SecurityPermissionState.Allow);
                 sol2Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/AssistantTeacher_ListView", SecurityPermissionState.Allow);
+                sol2Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/ProgramWeek_ListView", SecurityPermissionState.Allow);
             }
             return sol2Role;
         }
@@ -231,11 +237,13 @@ namespace LDS.Module.DatabaseUpdate {
                 sol3Role.AddTypePermission<Student>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
                 sol3Role.AddTypePermission<Batch>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
                 sol3Role.AddTypePermission<AssistantTeacher>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
+                sol3Role.AddTypePermission<ProgramWeek>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
                 sol3Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/Batch_ListView", SecurityPermissionState.Allow);
                 sol3Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/Student_ListView", SecurityPermissionState.Allow);
                 sol3Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/Student_ListView_Attendance", SecurityPermissionState.Allow);
                 sol3Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/Student_ListView_Generate", SecurityPermissionState.Allow);
                 sol3Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/AssistantTeacher_ListView", SecurityPermissionState.Allow);
+                sol3Role.AddNavigationPermission("Application/NavigationItems/Items/Default/Items/ProgramWeek_ListView", SecurityPermissionState.Allow);
 
             }
             return sol3Role;

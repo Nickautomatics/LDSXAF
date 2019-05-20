@@ -12,6 +12,7 @@ using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
 using LDS.Module.Interfaces;
+using LDS.Module.PublicEnums;
 
 namespace LDS.Module.BusinessObjects
 {
@@ -29,7 +30,7 @@ namespace LDS.Module.BusinessObjects
             base.AfterConstruction();
         }
 
-
+        Program program;
         string password;
         string username;
         DateTime birthday;
@@ -107,6 +108,12 @@ namespace LDS.Module.BusinessObjects
         {
             get => birthday;
             set => SetPropertyValue(nameof(Birthday), ref birthday, value);
+        }
+
+        public Program Program
+        {
+            get => program;
+            set => SetPropertyValue(nameof(Program), ref program, value);
         }
 
         [Association("AssistantTeacher-Students")]
